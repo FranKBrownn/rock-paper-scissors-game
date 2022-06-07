@@ -8,26 +8,38 @@
         <script src="https://kit.fontawesome.com/f40cae7fe4.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1 class="heading">
-            Rock<i class="fa-solid fa-hand-back-fist"></i> Paper<i class="fa-solid fa-hand"></i> Scissors <i class="fa-solid fa-hand-scissors"></i>
-        </h1>
         <div class="game-area">
+            <h1 class="heading">
+                <span class="red">Rock<i class="fa-solid fa-hand-back-fist"></i></span><span class="green"> Paper<i class="fa-solid fa-hand"></i></span><span class="blue"> Scissors <i class="fa-solid fa-hand-scissors"></i></span>
+            </h1>
             <div class="controls-area">
-                <button data-type="Rock" class="btn btn--big btn--red">
+                <h2 class = yellow >player</h2>
+                <button data-type="Rock" class="btn btn--red">
                     <i class="fa-solid fa-hand-back-fist"></i>
-                <button data-type="paper" class="btn btn--big btn--green">
+                <button data-type="paper" class="btn  btn--green">
                     <i class="fa-solid fa-hand"></i>
-                <button data-type="paper" class="btn btn--big btn--blue">
+                <button data-type="paper" class="btn btn--blue">
                     <i class="fa-solid fa-hand-scissors"></i>
                 </div>
                 <div class="ai-opponent">
+                    <h2 class = orange>Ai</h2>
+                    <button data-type="Rock" class="btn btn--big btn--red">
+                        <i class="fa-solid fa-hand-back-fist"></i>
+                    <button data-type="paper" class="btn btn--big btn--green">
+                        <i class="fa-solid fa-hand"></i>
+                    <button data-type="paper" class="btn btn--big btn--blue">
+                        <i class="fa-solid fa-hand-scissors"></i>
 
                 </div>
-                <div class="player-lives">
+                <div class="lives">
+                    <p class="player-lives"><i class="fa-solid fa-heart-pulse"></i>Your Lives: <span id="player-lives">3</span></p>
+
+                    <p class="ai-lives"><i class="fa-solid fa-heart-pulse"></i>Ai Lives: <span id="ai-lives">3</span></p>
+
 
                 </div>
-                <div ai-lives>
-
+                <div class="restart">
+                    <button type="reset" class="play-again">Play Agian</button>
                 </div>
         </div>
         <script src="assests/js/scrpit.js"></script>
