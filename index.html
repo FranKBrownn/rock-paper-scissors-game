@@ -14,20 +14,20 @@
             </h1>
             <div class="controls-area">
                 <div class="player"><h2 class = yellow >PLAYER</h2>
-                <button data-type="Rock" class="btn btn--red">
+                <button data-type="rock" class="btn btn--red play" id = "rock" onclick="rockPlayed()">
                     <i class="fa-solid fa-hand-back-fist"></i>
-                <button data-type="paper" class="btn  btn--green">
+                <button data-type="paper" class="btn  btn--green play" id = "paper" onclick="paperPlayed()">
                     <i class="fa-solid fa-hand"></i>
-                <button data-type="paper" class="btn btn--blue">
+                <button data-type="scissors" class="btn btn--blue play" id = "scissors" onclick="scissorPlayed()"> 
                     <i class="fa-solid fa-hand-scissors"></i>
                 </div>
                 <div class="ai-opponent">
                     <h2 class = orange>Ai</h2>
-                    <button data-type="Rock" class="btn btn--big btn--red">
+                    <button data-type="Rock" class="btn btn--red ai-play" id = "ai-rock">
                         <i class="fa-solid fa-hand-back-fist"></i>
-                    <button data-type="paper" class="btn btn--big btn--green">
-                        <i class="fa-solid fa-hand"></i>
-                    <button data-type="paper" class="btn btn--big btn--blue">
+                    <button data-type="paper" class="btn  btn--green ai-play" id = "ai-paper">
+                        <i class="fa-solid fa-hand"+></i>
+                    <button data-type="scissors" class="btn btn--blue ai-play" id = "ai-scissors">
                         <i class="fa-solid fa-hand-scissors"></i>
 
                 </div>
@@ -40,7 +40,7 @@
 
                 </div>
                 <div class="restart">
-                    <button type="reset" class="play-again">Play Agian</button>
+                    <button  data-type= "reset" type="reset"  class="play-again">Play Agian</button>
                 </div>
         </div>
         <script src="assests/js/scrpit.js"></script>
