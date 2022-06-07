@@ -1,48 +1,29 @@
-document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
-
-   for (let button of buttons){
-       button.addEventListener("click" , function(){
-        if (this.getAttribute("data-type") === "reset"){
-            playAgain()
-        } else{ 
-            runGame()
-        } 
-        
-        
-       })
-
-   }
-
-           
-       runGame()
-        
-        
-})
-
-
-function runGame(){
-    
-   } 
-
-    
-   function aiPickObject(){
-    
-    
-}
-
 function loseLife(){
-console.log("you lose a life")
-}
+let lives = parseInt(document.getElementById("player-lives").innerText)
 
+ if (lives > 1) {
+    document.getElementById("player-lives").innerText = --lives;
+} else{document.getElementById("player-lives").innerText = --lives;
+    alert("GAME OVER!!!!!! Better luck next time")
+}
+}
 function aiLoseLife(){
-    console.log("AI lose a life")
+    let lives = parseInt(document.getElementById("ai-lives").innerText)
+
+ if (lives > 1) {
+    document.getElementById("ai-lives").innerText = --lives;
+} else{
+    document.getElementById("ai-lives").innerText = --lives;
+    alert("CONGRATULATIONS!!!!!! you beat the AI. want to try angain")
+}
 
 }
 
 function playAgain(){
-
-}
+    document.getElementById("ai-lives").innerText = originalText;
+    document.getElementById("player-lives").innerText = originalText
+}   
+    alert("game restarted time to try again")
 
 function rockPlayed(){
     let aimove = Math.floor(Math.random()*3) 
