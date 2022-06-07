@@ -2,9 +2,10 @@ function loseLife(){
 let lives = parseInt(document.getElementById("player-lives").innerText)
 
  if (lives > 1) {
-    document.getElementById("player-lives").innerText = --lives;
+       document.getElementById("player-lives").innerText = --lives;
 } else{document.getElementById("player-lives").innerText = --lives;
     alert("GAME OVER!!!!!! Better luck next time")
+    playAgain()
 }
 }
 function aiLoseLife(){
@@ -14,16 +15,25 @@ function aiLoseLife(){
     document.getElementById("ai-lives").innerText = --lives;
 } else{
     document.getElementById("ai-lives").innerText = --lives;
-    alert("CONGRATULATIONS!!!!!! you beat the AI. want to try angain")
+    alert("CONGRATULATIONS!!!!!! you beat the AI. want to try again")
+    playAgain()
 }
 
 }
 
 function playAgain(){
-    document.getElementById("ai-lives").innerText = originalText;
-    document.getElementById("player-lives").innerText = originalText
-}   
-    alert("game restarted time to try again")
+    let playerlives = document.getElementById("player-lives").innerText
+    let ailives = (document.getElementById("ai-lives").innerText)
+    if (playerlives < 3){
+        document.getElementById("player-lives").innerText = ++playerlives;
+        
+    } if (ailives < 3){
+        document.getElementById("ai-lives").innerText = ++ailives
+        playAgain()
+    }
+        
+    
+}  
 
 function rockPlayed(){
     let aimove = Math.floor(Math.random()*3) 
