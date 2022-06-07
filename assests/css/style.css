@@ -26,7 +26,15 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    display: inline;
+    
+}
+.player{
+    float: left;
+    width: 50%;
+}
+.ai-opponent{
+    float: right;
+    width: 50%;
 }
 
 .yellow{
