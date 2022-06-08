@@ -21,10 +21,10 @@ The heading and logos are spit up into colours with all three, Rock, Papper and 
 ### Validator Testing
 
 ### html
-No  errors were returned when passing through the official W3C validator <link scr="https://validator.w3.org/nu/">
+No  errors were returned when passing through the official W3C validator https://validator.w3.org/nu/
 
 ### CSS
-No errors were found when passing through the official<link scr="https://jigsaw.w3.org/css-validator/validator">
+No errors were found when passing through the official https://jigsaw.w3.org/css-validator/validator
  
 ### javaScript
 No errors were found when passing through the official Jshint validator.
@@ -40,7 +40,21 @@ The most complex function has a cyclomatic complexity value of 4 while the media
 
 ### unfixed bugs
 i have discoved one bug where one game reset. if one of the players had 2 or more lives when the game was over the losing player would only recive 2 lives instead of 3 
-this bug would be solved by clicking the play again button again.  
+this bug would be solved by clicking the play again button again.
+
+## Deployment
+
+he site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - https://8000-frankbrownn-rockpapersc-qeirrfuh3e7.ws-eu47.gitpod.io/
+
+
+## credits
+### content
+i got the logos for my work form fontawesome https://fontawesome.com/
 
 
 
